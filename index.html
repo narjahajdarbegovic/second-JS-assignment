@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second assignment</title>
+</head>
+
+<body>
+
+    <script>
+
+        var firstNumber = parseInt(prompt("Molim vas unesite prvi broj"));
+        var operation = prompt("Molim vas unesite aritmeticku operaciju (+, -, *, /)");
+        var secondNumber = parseInt(prompt("Molim vas unesite drugi broj"));
+        var result;
+
+        switch (operation) {
+            case "+":
+                result = firstNumber + secondNumber;
+                break;
+            case "-":
+                result = firstNumber - secondNumber;
+                break;
+            case "*":
+                result = firstNumber * secondNumber;
+                break;
+            case "/":
+                result = firstNumber / secondNumber;
+                break;
+            default:
+                alert("Pogresno ste unjeli operaciju, pokušajte ponovo.")
+        }
+
+        alert("Rezultat je: " + result);
+
+
+    </script>
+
+</body>
+
+</html>
